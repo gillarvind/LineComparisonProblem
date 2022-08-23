@@ -10,13 +10,17 @@
             LineCompProblem lineCompProblem2 = new LineCompProblem(1, 2, 3, 4);
             double line2 = lineCompProblem.CalculateLength();
             Console.WriteLine("length of the first line" + line2);
-            if(line1 == line2)
+            if (line1.CompareTo(line2) == 0)
             {
-                Console.WriteLine("line1 is equal to line2");
+                Console.WriteLine("both lines are same");
+            }
+            if (line1.CompareTo(line2) > 0)
+            {
+                Console.WriteLine("lin1 is grater than line2");
             }
             else
             {
-                Console.WriteLine("line1 is not equal to line2");
+                Console.WriteLine("line2 is grater than line1");
             }
         }
     }
